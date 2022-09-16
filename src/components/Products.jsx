@@ -70,16 +70,15 @@ const Products = () => {
         </div>
         {filter.map((p) => {
           return (
-            <div className="col-md-3 my-2 mx-2 ">
+            <div className="col-md-3 my-2 mx-2 " key={p.id}>
               <div
                 className="card h-100 text-center p-4 "
-                key={p.id}
                 style={{ width: "18rem" }}
               >
                 <img src={p.image} className="card-img-top" alt={p.title} />
                 <div className="card-body">
                   <h5 className="card-title">{p.title}</h5>
-                  <p className="card-text">{p.price}</p>
+                  <p className="card-text">Rs. {p.price}</p>
                   <a href="#" className="btn btn-primary">
                     buy now
                   </a>
