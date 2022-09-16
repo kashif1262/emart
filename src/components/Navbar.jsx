@@ -1,13 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="/">
             LA COLLECTION
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,40 +23,49 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
+                <NavLink
                   className="nav-link active text-capitalize"
                   aria-current="page"
-                  href="#"
+                  to="/"
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-capitalize" href="#">
-                  product
-                </a>
+                <NavLink className="nav-link text-capitalize" to="/products">
+                  products
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link text-capitalize">
+                <NavLink to="/about" className="nav-link text-capitalize">
                   about
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link text-capitalize">
+                <NavLink to="/contact" className="nav-link text-capitalize">
                   contact
-                </a>
+                </NavLink>
               </li>
             </ul>
             <div className="buttons ">
-              <a href="#" className="btn btn-outline-dark text-capitalize ">
+              <NavLink
+                to="/login"
+                className="btn btn-outline-dark text-capitalize "
+              >
                 login in
-              </a>
-              <a href="#" className="btn btn-outline-dark text-capitalize mx-2">
+              </NavLink>
+              <NavLink
+                to="/register"
+                className="btn btn-outline-dark text-capitalize mx-2"
+              >
                 register
-              </a>
-              <a href="#" className="btn btn-outline-dark text-capitalize">
+              </NavLink>
+              <NavLink
+                to="/cart"
+                className="btn btn-outline-dark text-capitalize"
+              >
                 cart (0)
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
