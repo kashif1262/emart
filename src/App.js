@@ -7,6 +7,7 @@ import Products from "./components/Products";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
+import Product from "./components/Product";
 
 // React router v4 or v5
 //<Route path="/" component={Home} />
@@ -27,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<Product />} />
 
         {/* <Route path="/products">
           <Products />
