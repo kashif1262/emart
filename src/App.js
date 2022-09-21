@@ -29,7 +29,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
-        <h1>Muhammad kashif iqbal </h1>
 
         {/* <Route path="/products">
           <Products />
@@ -45,6 +44,7 @@ function App() {
           <Login />
         </Route> */}
       </Routes>
+      <h1>Muhammad kashif iqbal </h1>
     </div>
   );
 }
